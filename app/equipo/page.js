@@ -28,7 +28,7 @@ export default function Page() {
             />
             <div className="absolute bottom-0 left-0 z-20 p-4">
               <h2 className="text-xl font-bold italic text-yellow-500">
-                Nuestro Equipo!
+                Nuestro Equipo
               </h2>
             </div>
           </div>

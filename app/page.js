@@ -1,23 +1,18 @@
-import { client } from "./utils/configSanity"
+import ArticlesHome from "./components/ArticlesHome";
+import Description from "./components/Description";
+import Hero from "./components/Hero";
+import Carousel from "./components/Sliders";
 
 
 
-async function getData(){
-  const query = `*[_type == "post"]`
-  const data = await client.fetch(query, {cache: "no-store"})
 
-  return data
-}
-
-export default async function Home() {
-
-  const data = await getData()
-
-  console.log(data)
-
+export default function page() {
   return (
-    <div>
-prueba
-    </div>
-  )
+    <div className="pt-20  flex flex-col items-center justify-center">
+    <Hero/>
+    <Description/>
+    <Carousel/>
+    <ArticlesHome/>
+  </div>
+  );
 }
